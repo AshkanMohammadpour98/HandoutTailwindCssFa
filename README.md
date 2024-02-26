@@ -79,7 +79,10 @@
 <div align="center">
   <img  src="./img/html css log.png">
 
-_Html Css ضروری_
+_Html , Css ضروری_
+
+ تسلط به زبان نشانه گزاری html  ضروری و تسلط به css  ضروری
+
 
 </div>
 
@@ -88,6 +91,6 @@ _Html Css ضروری_
   <img  src="./img/npm-node-package-manager-logo-DE93649ED1-seeklogo.com.png">
   <img  src="./img/Javascript.png" width="200">
 
-_JavaScrip Npm مزیته اجباری نیست_
+_JavaScrip , Npm مزیته اجباری نیست_
 
 </div>
