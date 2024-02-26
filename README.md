@@ -2,10 +2,7 @@
 * فصل اول
     * قسمت اول  [Tailwind چیست؟](#tailwindcss-چیست؟)
       
-    *  قسمت دوم پیش نیاز های TialwindCss
-      
- 
-    *  <a href="#tailwindcss-چیست؟">Heading</a>
+    *  قسمت دوم  [پیش نیاز های TialwindCss ](#پیش-نیاز-های-TialwindCss)
     
       
     * قسمت سوم  [Utility ها در تلویند چی هستند](#Utility-ها-در-تلویند-چی-هستند) 
