@@ -6,9 +6,9 @@
 
 ---
 
-<p align="center">
+<div align="center">
   <img  src="./img/tailwindcsslogo.png">
-</p>
+</div>
 
 <br/>
 
@@ -73,3 +73,21 @@
 `
 
 ---
+
+> # پیش نیاز های TialwindCss
+
+<div align="center">
+  <img  src="./img/html css log.png">
+
+_Html Css ضروری_
+
+</div>
+
+
+<div align="center">
+  <img  src="./img/npm-node-package-manager-logo-DE93649ED1-seeklogo.com.png">
+  <img  src="./img/Javascript.png" width="200">
+
+_JavaScrip Npm مزیته اجباری نیست_
+
+</div>
