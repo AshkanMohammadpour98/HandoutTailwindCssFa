@@ -1,6 +1,6 @@
 
 * فصل اول
-    * قسمت اول  [Tailwind چیست؟ ](#tailwindCss-چیست؟)
+    * قسمت اول  [tailwindCss چیست؟](#tailwindCss-چیست؟)
       
     *  قسمت دوم  [پیش نیاز های TialwindCss ](#پیش-نیاز-های-TialwindCss)
     
