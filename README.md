@@ -1,6 +1,6 @@
 * فصل اول :clipboard:
   
-    * قسمت اول  [TailwindCss چیست؟ ](#چیست؟tailwindCss)
+    * قسمت اول  [TailwindCss چیست؟ ](#چیست؟-tailwindCss)
 
       
     *  قسمت دوم  [پیش نیاز های TialwindCss ](#پیش-نیاز-های-TialwindCss)
@@ -29,7 +29,7 @@
 فصل 1- معرفی 
 
 
-> # tailwindCssچیست؟
+> # چیست؟ tailwindCss
 
 
 *نوشته شده بر اساس دوره تلویندcss با امید بهاری فر سایت [سایت کدنایت](https://codenight.ir/courses)*
