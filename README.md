@@ -157,4 +157,43 @@ Inline-style , utility-class
 
 ---
 > # Tailwind Css در چه وب سایت های استفاده شده
-وب ساست open ai  هوش مصنوعی چت جی پی تی
+
+<br/>
+
+وب ساست open ai  هوش مصنوعی چت جی پی تی.
+
+<div align="center">
+  <img  src="./img/openAi imge.PNG" width="300">
+  
+  Openai.com
+</div>
+
+<br/>
+
+وب سایت دات نت که برای شرکت مایکروسافت است.
+<div align="center">
+  <img  src="./img/Net.PNG" width="300">
+  
+  Dotnet.microsoft.com
+</div>
+
+<br/>
+
+
+وب سایت next.js
+
+<div align="center">
+  <img  src="./img/Nextjs.PNG" width="300">
+  
+  nextjs.org/docs
+  
+</div>
+
+<br/>
+
+وب سایت کد نایت
+<div align="center">
+  <img  src="./img/Codenight.PNG" width="300">
+  
+  codenight.ir
+</div>
