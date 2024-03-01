@@ -18,9 +18,11 @@
  
  * فصل دوم :clipboard:
    
-   * قسمت اول بزودی... :blush: :date:
       
-  
+    * قسمت اول  [توضیح کلی و نحوه این فصل](#توضیح-کلی-و-نحوه-این-فصل)
+      
+    
+    * قسمت دوم بزودی... :blush: :date:
 
 
 ---
@@ -218,7 +220,7 @@ Inline-style , utility-class
 https://tailwindcss.com/docs/installation/framework-guides
 
 <div align="center">
-  <img  src="./img/installation part-1.PNG" >
+  <img  src="./img/installation part-1.PNG"  >
     <img  src="./img/installation part-2.PNG" >
   
 </div>
