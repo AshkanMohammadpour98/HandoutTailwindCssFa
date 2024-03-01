@@ -213,5 +213,13 @@ Inline-style , utility-class
 از طریق سایت خود تلویند قسمت داکیومیشن و قسمت نصب  میتونین نصب تلویند و دستورات نصب روی فریم ورک های مختلف رو میتوینن نصب کنین
 1-	وارد وب سایت tailwindcss.com
 2-	از منوی بالا وارد بخش DOC  بشین داکیومیشن
-3-	از منوی سمت چپ  روی Getting Start  بشن  صفحه ای که براتون میاد هم یه منو داره روی  Framework Guids  بشن و لیست لایبری ها و کتاب خانه ها میاد
+3-	از منوی سمت چپ  روی Getting Start  بشن  صفحه ای که براتون میاد هم یه منو داره روی  Framework Guids  بشن و لیست لایبری ها و کتاب خانه ها 
+
+https://tailwindcss.com/docs/installation/framework-guides
+
+<div align="center">
+  <img  src="./img/installation part-1.PNG" >
+    <img  src="./img/installation part-2.PNG" >
+  
+</div>
 
