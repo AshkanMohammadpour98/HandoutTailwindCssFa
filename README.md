@@ -359,5 +359,9 @@ module.exports = {
 یه مثال بزنیم:
 
 <img  src="./img/test code-1.PNG" >
+
 خب هالا کلید های ترکیبی  ali+ shift + f رو میزنیم 
+
 <img  src="./img/test code-2.PNG" >
+
+---
