@@ -323,3 +323,41 @@ https://tailwindcss.com/blog/automatic-class-sorting-with-prettier#how-classes-a
 
 
 <img  src="./img/editor setup 1.PNG" >
+
+
+که اگه روی on GitHub کلیک کنیم وارد یه اکنت گیت هاب میشیم
+که لینکش اینه 
+
+https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+
+اسمش pretteier-plugin-tailwindcss است 
+و دستورات نصب و کانفیگ و توضیحالتش یکم پایین تر نوشته شده
+
+
+<img  src="./img/editor setup2 git hub.PNG" >
+
+```
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+خب هالا این پلاگین روی اکستیشن prettier نصب شد و یه مرحله دیگه داریم  . بازمه که یه فایل با اسم prettier.config.js  درست کنیم رو مسیر روت پروژه
+و داخل فایل prettier.config.js این کد رو قرار بدیم 
+
+``` html
+module.exports = {
+  plugins: ['prettier-plugin-tailwindcss'],
+}
+```
+
+و این تنظیمات رو داخلش بنویسم  و درواقع یه prettier  گفتیم که  تو بیا از پلاگین prettier-plugin-tailwindcss استفاده کن .
+
+
+<img  src="./img/prettierconfig code.PNG" >
+
+
+خب هالا میتونیم از این قایلیت های مرتب سازی کد ها المنت ها و یوتیلیتی های تلونیدی رو هم مرتب کنه و نظم بده .
+یه مثال بزنیم:
+
+<img  src="./img/test code-1.PNG" >
+خب هالا کلید های ترکیبی  ali+ shift + f رو میزنیم 
+<img  src="./img/test code-2.PNG" >
