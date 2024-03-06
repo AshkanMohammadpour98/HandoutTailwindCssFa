@@ -20,7 +20,9 @@
   
 - فصل سوم 
   - قسمت اول [Utility های فونت](#Utility-های-فونت)
-  - قسمت دوم بزودی ... :blush: :date:
+  - قسمت دوم [نحوه کلی کارکرد Layer ها و Apply در تلویند](#نحوه-کلی-کارکرد-Layerها-و-Apply-درتلویند)
+    
+  - قسمت سوم بزودی ... :blush: :date:
 
 ---
 
@@ -447,3 +449,18 @@ https://tailwindcss.com/docs/font-family
 <img  src="./img/fontFamily example.PNG" >
 
 ---
+
+> # نحوه کلی کارکرد Layer ها و Apply در تلویند
+
+اینا مربوط به همون استایل شیت ورودی هستند . اگه خاطرتون باشه چندین بار اون استایل شیت ورودی تلویند و اون سه تا دایریکتیو (directives) اشاره کردیم
+
+
+@tailwind base:
+<img  src="./img/layerBacik.PNG" >
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+```
