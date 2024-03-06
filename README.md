@@ -17,8 +17,10 @@
   - قسمت سوم [نصب تلویند با استفاده از Tailwind CLI](#نصب-تلویند-با-استفاده-از-Tailwind-CLI)
   - قسمت چهارم [کانفیگ کردن prettir با تلویند](#کانفیگ-کردن-prettir-با-تلویند)
   - قسمت پنجم [نصب تلویند روی فریم ورک های مختلف](#نصب-تلویند-روی-فریم-ورک-های-مختلف)
-    
-- فصل سوم بزودی... :blush: :date:
+  
+- فصل سوم 
+  - قسمت اول [Utility های فونت](#Utility-های-فونت)
+  - قسمت دوم بزودی ... :blush: :date:
 
 ---
 
@@ -414,5 +416,34 @@ index.css
 و کار میکنه .
 
 
+
+---
+
+
+> # Utility های فونت
+
+فصل 3 - مفاهیم و utility  های پایه ای
+
+<br/>
+
+بصورت پیشفرض خود تلویند فقط سه تا utility  برای فونت ها داره و سه نوع فونت رو در اختیار ما قرار میده که درواقع همون فونت های دیفالت خود مرور گر هستند که توی پروژه های واقعی این سه utility فونت برای ما کاربرد ندارند چون شاید ما بخوایم فونت دلخواه خودمون رو داشته باشیم  و فونت های فارسی داشته باشیم	.
+
+در طول این فصل یاد میگیریم که utility های دیفالت تلویند رو تغیر ویا افزایش بدیم واضافه کنیم 
+
+
+که توی وب سایت تلویند هم قسمت Typogrophy و بخش Font Family هم این سه تا یوتیلیتی فونت ها رو نوشته  
+
+https://tailwindcss.com/docs/font-family
+
+
+
+
+| Class      | Properties |
+| ----------- | ----------- |
+| font-sans      | font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";       |
+| font-serif	   | font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;        |
+| font-mono	   | font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;        |
+
+<img  src="./img/fontFamily example.PNG" >
 
 ---
