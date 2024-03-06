@@ -458,7 +458,7 @@ https://tailwindcss.com/docs/font-family
 @tailwind base:
 <img  src="./img/layerBacik.PNG" >
 
-```
+```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
