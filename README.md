@@ -601,3 +601,57 @@ Layer بعدی  @layer utilites :
     }
 }
 ```
+<img  src="./img/output components layer.PNG" >
+همونطور که دیدیم چند استایل رو تو یه کلاس یا یوتیلیتی نوشتیم .
+التبه که داخل layer components هم میشه  که یه استایل رو نوشت و بهمون گیر نمیده ولی معمولا همنطور که توضیح دادیم چنیدن استایل رو مینویسیم 
+
+یه نکته مهم : اون کلاس یا یوتیلیتی که توی layer components  مینوسیم اولویت کمتری دارن به نسبت layer ustilites  برای مثال اگه شما background-color : red ; رو داخل یه کلاس به اسم  .red توی layer components بنویسیم و توی layer utilites  هم یه کلاس به اسم مثلا .blue داشته باشیم و توش نوشته باشیم background-color: blue و هردو کلاس ها رو یعنی blue , red رو بدیم به یه عنصر مال layer utilites که رنگ blue هست اعمال میشه در نهایت. چون اولیوت بیشتری داره .
+
+```css
+@layer utilities {
+    .blue {
+        background-color: blue;
+    }
+}
+
+@layer components {
+    .red {
+        background-color: red;
+    }
+}
+```
+
+<img  src="./img/output components layer and utilites layer.PNG" >
+
+
+```  پس ولویت استایل هایی که تو layer utilites قرار میگیرن از اولویت استایل هایی که تو layer components  قرار میگیرن بیشتره و همچنین اولویت استایل هایی که تو layer base قرار میگیرند از اولویت استایل های layer utilites بیشتره  ```
+
+
+
+Apply
+Applay  چیه و چیکار میکنه؟ میاد میگه که اقا تو اگر که خاستی میتونی داخل این استایل شیت ورودی تلویندت بجای اینکه دستی استایل ها  و پراپرتی های سی اس اس  رو بنویسی  میتونی از یوتیلیتی های خود تلویند استفاده کنی 
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+}
+
+@layer utilities {
+    .blue {
+        background-color: blue;
+    }
+}
+
+@layer components {
+    .red {
+        @apply bg-red-500 rounded-sm
+    }
+}
+```
+
+پس شما اگه خاستین داخل layer ها تون بجای دستی نوشتن پراپرتی های css میتونین از @apply استفاده کنین .
+---
