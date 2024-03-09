@@ -723,3 +723,138 @@ https://rastikerdar.github.io
  ویه فایل   fonts.css هم درست میکنیم که این فونت هایی که داریم رو به سی اس اس  معرفی کنیم  و اون هم به سند index.html لینک میکنیم که 
 فونت ها رو بتونه بخونه
 
+
+<img  src="./img/fontLinks.PNG" >
+
+اولی لینک دهی استایل شیت خروجی تلویند است و دومی اون فایل سی اس اس  است که فونت ها رو توش معرفی کردیم 
+
+fonts.css
+```css
+@font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: Vazirmatn RD;
+    src: url('../fonts/Vazirmatn-RD-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  ```
+
+<img  src="./img/files.PNG" >
+
+هالا میخواییم فونت ها مون رو به تلویند معرفی کنیم و مثل یوتیلیتی های تلویند ازشون استفاده کنیم که سه  روش فونت مون رو به تلیوند معرفی میکینم
+همونطور که گفتیم خود تلویند سه فونت پییشفرض رو داره که یوتیلیتی فونت font-sans رو چه بنویسیم چه ننویسیم فونت پیشفرض است و تغیری نمیکنه روش اول میتونیم با استفاده از فایل کانفیگ مقدارش رو برابر اون فونت وزیری که خودمون داریم و دانلود کردیم بزاریم این یه روش یعنی این فونت وزیرمیشه فونت پیشفرض همه متن ها یعنی بجای فونت font-sans که خودش مقدارپیشفرض هست رو مقدارشو اوررایت کنیم به فونت خودمون 
+
+وارد فایل tailwind.config.js میشیم و دخل extend کلمه fontFamily رو مینویسم و اسم sans رو مینویسم قبلا خودتلویند این اسم و مقدار فونت رو داره ولی میایم مقدارشو اوررایت تغیر میدیم به فونت خودمون و اسم فونتی که دانلود کردیم که Vazirmatn RD بود رو مینویسیم
+
+
+```css
+/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  content: ["./public/**/*.html"],
+  theme: {
+    extend: {
+      fontFamily : {
+        sans : " Vazirmatn RD"
+      }
+
+    },
+  },
+  plugins: [],
+}
+```
+
+index.html
+```html
+  <body dir="rtl">
+    <p class="font-sans">سلام دنیا</p>
+  </body>
+```
+از اونجا که فونت پیشفرض مرور و سند مون همون فونت دیفالت sans هست  و ما اومدیم اون رو اوررایت تغیر یا بازنویسی کردیم به این فونت vazerMatn RD بخاطر همین این `"class="font-sans`  رو چه بنویسم چه ننویسم اعمال میشه روش این فونت چون بصورت دیفالت همین sans هست
+
+
+اما راه دوم بجای اینکه مثلا این اسم و فونت sans رو اوررایت یا تغیر بدیم از اول یه اسم براش درنظر بگیریم  مثلا اسمشو بزاریم vazerMatn و مقدارشو برابر اسم فونت مون قرار بدیم.
+
+tailwind.config.js
+```js
+/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
+module.exports = {
+  content: ["./public/**/*.html"],
+  theme: {
+    extend: {
+      fontFamily : {
+        Vazirmatn : " Vazirmatn RD"
+      }
+
+    },
+  },
+  plugins: [],
+}
+```
