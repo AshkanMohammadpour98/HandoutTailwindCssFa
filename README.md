@@ -27,8 +27,7 @@
   - قسمت ششم [یوتلیلیتی Font Size](#برسی-روش-افزودن-مقادیر-دلخواه-برای-یوتیلیتی-ها-واضافه-کردن-مقادیر-دلخواه-Font-Size)
   - قسمت هفتم [آشنایی با مقادیر Arbitrary برای یوتیلیتی های تلویند](#آشنایی-با-مقادیر-Arbitrary-برای-یوتیلیتی-های-تلویند)
   - قسمت هشتم [یوتیلیتی های مربوط به Font-style و Font weight](#یوتیلیتی-های-مربوط-به-Font-style-و-Font-weight)
- 
-    یوتیلیتی های مربوط به Font-style و Font weight 
+  
 
 
 
@@ -1057,3 +1056,35 @@ italic
 
 و هرکجا نیاز داشتیم استفاده کنیم ولی همنطور که گفتیم این فونت استایل oblique زیاد رایج نیست
 که خروجی شو هم براتون اوردم که تفاوت هاشونو بینین
+
+
+<img  src="./img/text  normal , italiac , oblique.PNG" >
+
+
+یوتلیتی بعدئ فونت ها که بریم سراغش یوتیلتی font weight است
+همونطور که میدونین فونت ها میتونند وزن های مختلفی داشته باشند وزمانی که ما چند وزن از یک فونت رو به پروژه مون اضافه میکنیم میتونیم font weight وزن های متن های خودمون رو مشخص کنیم و از اون ورزن ها استفاده کنیم .
+
+https://tailwindcss.com/docs/font-weight
+
+درحالت عادی تلویند 9 وزرن مختلف برای font weight  داره
+
+
+| class      | properties |
+| ----------- | ----------- |
+| font-thin      | font-weight: 100;      |
+| font-extralight   | font-weight: 200;   |
+| font-light   | font-weight: 300;        |
+| font-normal  | font-weight: 400;        |
+| font-medium  | font-weight: 500;        |
+| font-semibold | font-weight: 600;       |
+| font-bold | font-weight: 700;       |
+| font-font-extrabold | font-weight: 800;       |
+| font-font-black | font-weight: 900;       |
+
+<img  src="./img/font wight test 9 text.PNG" >
+
+اگه خاطرتون باشه ما فونت وزیر متن و هر 9 تا وزرن رو قبلا اضافه کردیم
+بنابراین میتونیم از هر تا این 9 وزن ها که یوتیلیتیش هست استفاده کنیم برای فونت مون
+
+
+<img  src="./img/font wight test 9 text vazermatn.PNG" >
