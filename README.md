@@ -1088,3 +1088,30 @@ https://tailwindcss.com/docs/font-weight
 
 
 <img  src="./img/font wight test 9 text vazermatn.PNG" >
+
+Font weight هایی یوتیلیتی های تلوند قابلیت شخصی سازی و تغیر دارند یعنی میتونیم مقدار مربوط به هر font-weight  رو داخل فایل کانفیگ تغیر بدیم 
+مثلا extralight  که 200 هست رو بزاریم 400 تغیرش بدیم 
+
+
+
+<img  src="./img/overright font from coustom.PNG" >
+الان یکی از مقادیر تلویند font-weight رو ویرایش یا اوررایت کردیم.
+میتونیم مقادیر جدید رو هم بنویسیم
+
+
+
+<img  src="./img/overright tow font.PNG" >
+
+و الان میتونیم به یوتیلیتی font-veryblack هم دسترسی داشته باشیم و استفاده کنیم ولی چون فونتی با ورزن 1000 تعریف نکردیم همون تا900 شبیه به black است.
+
+از مقادیر Arbitrary هم میتونیم استفاده کنیم که قبلا بهاش اشناشدیم
+
+```html
+<p class="font-[1100]">
+متن تستی
+</p>
+```
+
+
+
+یه نکته برای    Arbitrary اگه دقت کرده باشین هم برای fontFamily ها و هم font weightها اول کلمه یوتیلیتی هاشون font است و با ادامه این کلمه مشخص میشه که منضور  font familyاست یا  font weight است و اگه از روش arbitrary   استفاده کنیم و بنویسیم font-[] و داخل [] ما چیزی بنویسیم خود تلویند تشخیص میده  که برای font family  است یا  font weight است .
