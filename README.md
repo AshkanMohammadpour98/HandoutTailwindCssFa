@@ -27,12 +27,13 @@
   - قسمت ششم [یوتلیلیتی Font Size](#برسی-روش-افزودن-مقادیر-دلخواه-برای-یوتیلیتی-ها-واضافه-کردن-مقادیر-دلخواه-Font-Size)
   - قسمت هفتم [آشنایی با مقادیر Arbitrary برای یوتیلیتی های تلویند](#آشنایی-با-مقادیر-Arbitrary-برای-یوتیلیتی-های-تلویند)
   - قسمت هشتم [یوتیلیتی های مربوط به Font-style و Font weight](#یوتیلیتی-های-مربوط-به-Font-style-و-Font-weight)
-  
+  - قسمت نهم [یوتیلیتی Line Clamp برای مشخص کردن حداکثر تعداد خطوط قابل مشاهده](#یوتیلیتی-Line-Clamp-برای-مشخص-کردن-حداکثر-تعداد-خطوط-قابل-مشاهده)
+
 
 
 
     
-  - قسمت نهم بزودی ... :blush: :date:
+  - قسمت دهم بزودی ... :blush: :date:
 
 ---
 
@@ -1115,3 +1116,56 @@ Font weight هایی یوتیلیتی های تلوند قابلیت شخصی س
 
 
 یه نکته برای    Arbitrary اگه دقت کرده باشین هم برای fontFamily ها و هم font weightها اول کلمه یوتیلیتی هاشون font است و با ادامه این کلمه مشخص میشه که منضور  font familyاست یا  font weight است و اگه از روش arbitrary   استفاده کنیم و بنویسیم font-[] و داخل [] ما چیزی بنویسیم خود تلویند تشخیص میده  که برای font family  است یا  font weight است .
+
+---
+
+> # یوتیلیتی Line Clamp برای مشخص کردن حداکثر تعداد خطوط قابل مشاهده
+
+
+این یوتیلیتی کمتر شناخته شده ولی خیلی جاها کاربردیه مخصوصن وقتی شما دارین کار های محتوایی رو نشون میدید خصوصن برای مقالات قطعا این یوتیلیتی به درد میخوره 
+که سینتکس نوشتاری این یوتیلیتی line-clamp-1 است که تا line-clamp-6
+  و line-clamp-none رو شامل میشه 
+
+
+| class       | Properties |
+| ----------- | ----------- |
+| line-clamp-1    | overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 1;|
+| line-clamp-2    | overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;|
+| line-clamp-3    | line-clamp-3	overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; |
+| line-clamp-4    | overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; |
+| line-clamp-5    | overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; |
+| line-clamp-6    | overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 6; |
+| line-clamp-none   | overflow: visible; display: block; -webkit-box-orient: horizontal; -webkit-line-clamp: none;|
+
+
+که البته میتونیم هر کدوم رو ویرایش کنیم و مقادیر Arbitrary  یا تغیر مقادیر از طریق فایل کانفیگ  رو هم میتونیم.
+
+زمانی که ما از این یوتیلیتی استفاده میکنیم عملا تعداد خطوط متن مون به این عددی که مینویسسم محدود میشه line-clomp-4 
+
+وب سایت تلویند سی اس اس و قسمت line clamp رو دم دستمون باشه 
+
+https://tailwindcss.com/docs/line-clamp
+
+
+
+<img  src="./img/website line colamp.PNG" >
+
+
+این تگ p داخل تصویر طولانیه و بیشتر از 3 خط هست ولی از یوتیلیتی line-clamp-3  استفاده کرده و تا سه خط رو نمایش داده و بقیشو بجای اضافش ... گزاشته  
+یعنی زمانی که خاستیم یه جورایی یه پیش نمایش از مقاله یا کاردی داشته باشیم که دخلش متنی است و بخوایم فقط یه پیشنهایش از اون متن یا توضیجات رو ببینیم این یوتیلیتی خیلی به درد میخوره
+خطوط قابل شماهده رو محدود میکنه به اون عددی که بهش میدیم
+حتی اگه عرض صفحه هم کوچیک و بزرگ بشه خودش اون 3 خط رو حفض میگنه و بقیشو حذف میکنه .
+
+یه مثال بزنیم
+
+<img  src="./img/line colamp example.PNG" >
+
+
+یه مقدار دیگه هم داره این یوتیلیتی که line-clamp-none است  که عنصر اگه line-clamp داشته باشه اون رو خنثا میکنه که کاربردش تو بحث ریسانسیو یا جایی اگه خاستین میشه استفاده کرد مثلا اگه طول یا عرض این مقدار شد که روی این کلیک شد این حنثا بشه.
+
+همچنین خودمون هم میتونیم مقدار جدیدی رو درست کنیم مثلا
+ line-clamp-11 و هرکجا که مثلا متن ما 30 خط هست و میخوایم فقط 11 خط رو نمایش بده و یه ... بزاره بقیشو میتونیم خودمون درست کنیم ابتدا وارد فایل کانفیگ تلویندیمون میشیم tailwind.config.js
+
+<img  src="./img/add a new to comfig line colamp.PNG" >
+
+<img  src="./img/output example line colamp.PNG" >
