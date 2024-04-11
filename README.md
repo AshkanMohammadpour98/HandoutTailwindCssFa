@@ -28,12 +28,14 @@
   - قسمت هفتم [آشنایی با مقادیر Arbitrary برای یوتیلیتی های تلویند](#آشنایی-با-مقادیر-Arbitrary-برای-یوتیلیتی-های-تلویند)
   - قسمت هشتم [یوتیلیتی های مربوط به Font-style و Font weight](#یوتیلیتی-های-مربوط-به-Font-style-و-Font-weight)
   - قسمت نهم [یوتیلیتی Line Clamp برای مشخص کردن حداکثر تعداد خطوط قابل مشاهده](#یوتیلیتی-Line-Clamp-برای-مشخص-کردن-حداکثر-تعداد-خطوط-قابل-مشاهده)
+  - قسمت دهم [یوتیلیتی Line Height](#یوتیلیتی-Line-Height)
+  
 
 
 
 
     
-  - قسمت دهم بزودی ... :blush: :date:
+  - قسمت یازدهم بزودی ... :blush: :date:
 
 ---
 
@@ -1169,3 +1171,43 @@ https://tailwindcss.com/docs/line-clamp
 <img  src="./img/add a new to comfig line colamp.PNG" >
 
 <img  src="./img/output example line colamp.PNG" >
+
+---
+
+# > یوتیلیتی Line Height	
+
+
+میخوایم یوتیلیتی های مربوط به line height رو برسی کنیم . توی css همونطور که میدونین ما از طریق تغیر دادن پراپرتی line height  میتونیم ارتفاع خطوط اون متن رو تغیر بدیم.
+
+
+همون جلسه ای که داشتیم موضوع فونت سایز ها رو یاد میگرفتیم یه اشاره کوچیک به قضیه line height ها کردیم .
+الان هم بهتر این قضیه line height  و یوتیلیتی هاشو برسی میکنیم  و همچنین ادغام کردن line height و font size روبرسی میکنیم یعنی یاد میگیریم که چطوری موقع مشخص کردن فونت سایز line height رو هم کنارش مشخص کنیم که تلویند یه سینتکسی برای این موضوع برای ما قرار داده.
+طبق واروال همیشه داکیومیشن تلویند دم دستمون باشه 
+https://tailwindcss.com/docs/line-height
+برای مقادیر line-height میتونیم تو css  هم مقادیر یونیت داربا rem و هم مقدیر یونیتلیس  که یه عدد خالی است  تلویند برای هرکدوم  یوتیلیتی هایی رو تعرف کرده
+
+
+| class      | propertise |
+| ----------- | ----------- |
+| leading-3   | line-height: .75rem; /* 12px */       |
+| leading-4   | line-height: 1rem; /* 16px */        |
+| leading-5   | line-height: 1.25rem; /* 20px */        |
+| leading-6   | line-height: 1.5rem; /* 24px */        |
+| leading-7   | line-height: 1.75rem; /* 28px */        |
+| leading-8   | line-height: 2rem; /* 32px */        |
+| leading-9   | line-height: 2.25rem; /* 36px */        |
+| leading-10  | line-height: 2.5rem; /* 40px */        |
+| leading-none   | line-height: 1;        |
+| leading-tight   | line-height: 1.25;        |
+| leading-snug   | line-height: 1.375;        |
+| leading-normal   | line-height: 1.5;        |
+| leading-relaxed   | line-height: 1.625;        |
+| leading-loose   | line-height: 2;        |
+
+هالا شما بسته به اون کاربرد مدنظرتون هست میتونین از هرکدوم استفاده کنین
+البته که این یوتیلیتی line-height  که تو تلویند leading است قابلیت استفاده arbitrary رو داره  و همچنین توی فایل کانفیگ تلویند هم میتونیم مقادیرشو شخصی سازی و تغیر بدیم اگه خاستیم  مثل اکثر یوتیلیتی های تلویند.
+
+
+```یه نکته اون عدد هایی که کنار یوتیلیتی ها هستند مثل همین یوتیلیتی leading-3 این عدد 3 که برابر .75rem است هرعدد که تلونید استفاده میکنه یعنی عدد 1 برابر .25rem است که هر کجا یوتیلیتی های تلویند از عدد استفاده شد مثل همین leading ها و یا padding , margin ها و... که عدد گزاشت هر عدد بدونین که برابر .25rem  است و مثلا اگه 3 بود یعنی .75rem یعنی .25rem * 3 شده ```
+
+
