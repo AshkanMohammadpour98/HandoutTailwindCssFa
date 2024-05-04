@@ -32,6 +32,7 @@
   - قسمت یازدهم [یوتیلیتی Text Align](#یوتیلیتی-Text-Align)
   - قسمت دوازدهم [یوتیلیتی text color](#یوتیلیتی-text-color)
   - قسمت سیزدهم [برسی پالت و رنگ های دیفالت تلویند و افزودن پالت رنگی دلخواه](#برسی-پالت-و-رنگ-های-دیفالت-تلویند-و-افزودن-پالت-رنگی-دلخواه)
+  - قسمت چهاردهم [استفاده از یوتیلیتی opacity و اعمال آن به رنگ ها](#باستفاده-از-یوتیلیتی-opacity-و-اعمال-آن-به-رنگ-ها)
   
 
     
@@ -1440,3 +1441,50 @@ const colors = require('tailwindcss/colors')
 یعنی الان میتونیم به همه مقادیر پالت رنگ slate با اسم suftBlue به طیف های رنگیش دسترسی داشته باشیم
 
 ---
+
+> # استفاده از یوتیلیتی opacity و اعمال آن به رنگ ها
+
+
+قراره یوتیلیتی opacity تلویند برای رنگ ها طبق روال  داکیومیشن تلونید رو باز میکنیم بخش Effectts و opacity 
+https://tailwindcss.com/docs/opacity
+
+
+| class      | properties |
+| ----------- | ----------- |
+| opacity-0      | opacity: 0 |
+| opacity-5      | opacity: 0.05 |
+| opacity-10      | opacity: 0.1 |
+| opacity-15      | opacity: 0.15 |
+| opacity-20      | opacity: 0.2 |
+| opacity-25      | opacity: 0.25 |
+| opacity-30      | opacity: 0.3 |
+| opacity-35      | opacity: 35 |
+| opacity-40      | opacity: 0.4 |
+| opacity-45      | opacity: 0.45 |
+| opacity-50      | opacity: 0.5 |
+| opacity-55      | opacity: 0.55 |
+| opacity-60      | opacity: 0.6 |
+| opacity-65      | opacity: 0.65 |
+| opacity-70      | opacity: 0.7 |
+| opacity-75      | opacity: 0.75 |
+| opacity-80      | opacity: 8 |
+| opacity-85      | opacity: 0.85 |
+| opacity-90      | opacity: 0.9 |
+| opacity-95      | opacity: 0.95 |
+| opacity-100      | opacity: 1 |
+
+
+همونطور که میبینید تلونید برای opacity یوتیلیتی های زیادی گزاشته از opacity 0 تا opacity 1  که یوتیلتی هاش از 0 تا 100 قرار داده برامون
+
+خب بریم یه دور تست کنیم
+
+
+```html
+  <body>
+    <div dir="rtl">
+      <p class="bg-red-800 opacity-25">متن فارسی لوریم است برای تست</p>
+    </div>
+  </body>
+```
+
+<img  src="./img/img/output opacity.PNG" >
