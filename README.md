@@ -33,6 +33,7 @@
   - قسمت دوازدهم [یوتیلیتی text color](#یوتیلیتی-text-color)
   - قسمت سیزدهم [برسی پالت و رنگ های دیفالت تلویند و افزودن پالت رنگی دلخواه](#برسی-پالت-و-رنگ-های-دیفالت-تلویند-و-افزودن-پالت-رنگی-دلخواه)
   - قسمت چهاردهم [استفاده از یوتیلیتی opacity و اعمال آن به رنگ ها](#باستفاده-از-یوتیلیتی-opacity-و-اعمال-آن-به-رنگ-ها)
+  - قسمت پانزدهم [Text Decoration , Text Decoracion Color , Text Decoration Stely , Text DecorationThickness](#Text-Decoration-,-Text-Decoracion-Color-,-Text-Decoration-Stely-,-Text-DecorationThickness)
   
 
     
@@ -1518,3 +1519,23 @@ https://tailwindcss.com/docs/opacity
 اصلا میتونیم برای متن مون یه رنگ و opacity  بزاریم و برای رنگ بکگراندمون هم یه opacity دیگه بزاریم
 
 <img  src="./img/write bg-color opacity and text-color opacity.PNG" >
+
+---
+
+> #  Text Decoration , Text Decoracion Color , Text Decoration Stely , Text DecorationThickness
+
+تو این جلسه قراره که پراپرتی های مربوط به Text Decoration داخل تلویند رو برسی کنیم خب همنطور که میدونین ما توی css با پراپرتی های Text Decoration  میتونیم روی متن هامون یه خطی بندازیم یا زیرشون خطی بندازیم یا بالا شون یه خطی بندازیم و همچنین میتونیم ضخامت این خطوط  فورم این خطوط  زنگ و مواردی از اینا رو کنترول کنیم که توی تلویند هم یوتیلیتی هایی برای این موارد وجود داره .
+
+
+دایکومشن تلویند رو باز میکنیم قسمت Typegraphy و Text Decoration که اینکشم اینه
+https://tailwindcss.com/docs/text-decoration
+تلویند برای قضیه text decoration   چهار تا یوتیلیتی گزاشته 
+
+
+| class      | properties |
+| ----------- | ----------- |
+| underline      | text-decoration-line: underline;    |
+| overline   | text-decoration-line: overline;         |
+| line-through   | text-decoration-line: line-through; |
+| no-underline   | text-decoration-line: none;         |
+
