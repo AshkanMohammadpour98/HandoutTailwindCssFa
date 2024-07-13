@@ -37,7 +37,7 @@
   
 
     
-  - قسمت پانزدهم بزودی ... :blush: :date:
+  - قسمت شانزدهم بزودی ... :blush: :date:
 
 ---
 
@@ -1539,3 +1539,50 @@ https://tailwindcss.com/docs/text-decoration
 | line-through   | text-decoration-line: line-through; |
 | no-underline   | text-decoration-line: none;         |
 
+<div align="center">
+  <img  src="./img/text decoration over viue.PNG">
+</div>
+
+
+قاعدتن دیگه این یوتیلیتی ها قابلیت شخصی سازی تو فایل کانفیگ و یا استفاده از روش Arbitrary  رو ندارن چون همین چهارتا هستن و بیشتر نیستن که براشون چیزی در نظر نگرفته باشه تلویند.
+
+مورد بعدی که میتونین کنترول کنین رنگ این خط هایی هست که روی متن ها مون هست که عبارت decoration-color  بعد – میتونین از مقادیر رنگی  که 
+
+
+
+
+<div align="center">
+  <img  src="./img/text decoration custom color.PNG">
+</div>
+
+قبلا هم برسی کردیم استفاده میکنیم اگه رنگی یا پالت رنگی خودتون هم درست کردین هم میشه استفاده کرد و پیشنهاد میده پس هم رنگای دیفالت تلویند و هم رنگایی که خودتون اگه تعریف کرده باشین 
+
+
+<div align="center">
+  <img  src="./img/text decoration custom color over viue.PNG">
+</div>
+
+برای این مورد <b/>یعنی  رنگ اون خط متن<b>  مثلا  decoration-red-500 میتونیم از روش Arbitrary هم استفاده کینم 
+
+<div align="center">
+  <img  src="./img/text decoration custom color arbitrary.PNG">
+</div>
+
+چون رنگه دیگه شما بجای اون اسم رنگ میتونین   تو تصویر بالا میبینین که متن چهارم چون از یوتیلیتی no-underline یعنی متن بدون خط این جایی استفاده میشه که عنصرمون خطی داده باشیم یعنی از یوتیلیتی های text decoration استفاده کرده باشیم و اون رو خنثی میکنه بخاطر همین رنگ هم به خط دادیم ولی چون خطی نداره رنگی نگرفته
+
+مورد بعدی Text decoration Srtyle  است  که برای اون هم 4 تا مقدار داریم که تلویند هم برای هر چهار تا یوتیلیتی هایی رو داره
+
+
+
+| class      | properties |
+| ----------- | ----------- |
+| decoration-solid      | text-decoration-style: solid;   |
+| decoration-double   |text-decoration-style: double;   |
+| decoration-dotted  | text-decoration-style: dotted; |
+| decoration-dashed   | text-decoration-style: dashed;  |
+| decoration-wavy  | text-decoration-style: wavy;    |
+
+
+<div align="center">
+  <img  src="./img/text decoration style over viue.PNG">
+</div>
