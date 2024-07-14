@@ -34,10 +34,12 @@
   - قسمت سیزدهم [برسی پالت و رنگ های دیفالت تلویند و افزودن پالت رنگی دلخواه](#برسی-پالت-و-رنگ-های-دیفالت-تلویند-و-افزودن-پالت-رنگی-دلخواه)
   - قسمت چهاردهم [استفاده از یوتیلیتی opacity و اعمال آن به رنگ ها](#باستفاده-از-یوتیلیتی-opacity-و-اعمال-آن-به-رنگ-ها)
   - قسمت پانزدهم [Text Decoration , Text Decoracion Color , Text Decoration Stely , Text DecorationThickness](#Text-Decoration-,-Text-Decoracion-Color-,-Text-Decoration-Stely-,-Text-DecorationThickness)
+  - قسمت شانزدهم [یوتیلیتی های Text Overflow برای شکستن خطوط متن](#یوتیلیتی-های-Text-Overflow-برای-شکستن-خطوط-متن)
+    
   
 
     
-  - قسمت شانزدهم بزودی ... :blush: :date:
+  - قسمت هفدهم بزودی ... :blush: :date:
 
 ---
 
@@ -1621,3 +1623,49 @@ https://tailwindcss.com/docs/text-decoration
 
 
   <img  src="./img/text decoration create new thickness config tailwind.PNG">
+
+  
+  
+  ---
+  
+> # یوتیلیتی های Text Overflow برای شکستن خطوط متن
+
+
+یوتیلیتی هایی که مشخص میکنند یک خط متن از کجا بشکنه  یا از کجا بریده بشه   قطعا با پراپرتی text overflow توی css آشنا هستید  که توی تلویند یوتیلیتی هایی براش هست	.
+
+وارد داکیومیشن تلویند Doc میشیم و وارد بخش   Typographyو Text overflow
+
+https://tailwindcss.com/docs/text-overflow
+
+
+
+| class      | properties |
+| ----------- | ----------- |
+| truncate      | overflow: hidden; text-overflow: ellipsis; white-space: nowrap;  |
+| text-ellipsis   | text-overflow: ellipsis;  |
+| text-clip     | text-overflow: clip;  |
+
+میبینیم که تلویند برای text overflow سه تا یوتیلتی در اختیار مون گزاشته 
+
+<div align="center">
+  <img  src="./img/text overFlow text-ellipsis.PNG">
+</div>
+
+اگه عنصرمون پراپرتی overflow hidden رو داشته باشه و یه طول وعرض مشخص داشته باشه و مثلا برای این متن مون هیچ فاصله یا ایپیسی پایینش جایی نداره که ادامه متن مون بره اونجا این یوتیلیتی text-ellipsis رو اگه بهش بدیم تاجایی که جا داره متن رو مینویسه و ادامه شو که جا نداره نمایش بده سه نقطه میزاره.
+
+<div align="center">
+  <img  src="./img/overFlow text-clip.PNG">
+</div>
+
+ای یوتیلیتی خودش بصورت پیشفرض است و تا جایی که جا میشه رو نمایش میده و اگه جایی برای شکستن هم نداشته باشه  بقیشو میبره.
+
+
+<div align="center">
+  <img  src="./img/text overFlow text-truncat.PNG">
+</div>
+
+
+یوتیلیتی truncate خود تلویند اون رو برای ما درست کرده یه ترکیب از دوتا یوتیلیتی قبلی یه جورایی فارغ از اینکه کاری نداشته باش جایی برای شکستن داره یا نه محدود به یه خط کن و ادامشو سه نقطه بزار. در واقع یه جورایی اگه خاطرتون باشه  یوتیلیتی line-clamp-1 که خط رو محدود به یک خط میکند و ادامه متن رو سه نقطه میزاشت.
+
+یوتیلیتی های text overflow  قابلیت شخصی سازی و تغیر رو ندارن 
+
