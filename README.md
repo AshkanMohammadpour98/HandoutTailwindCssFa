@@ -1570,7 +1570,7 @@ https://tailwindcss.com/docs/text-decoration
 
 چون رنگه دیگه شما بجای اون اسم رنگ میتونین   تو تصویر بالا میبینین که متن چهارم چون از یوتیلیتی no-underline یعنی متن بدون خط این جایی استفاده میشه که عنصرمون خطی داده باشیم یعنی از یوتیلیتی های text decoration استفاده کرده باشیم و اون رو خنثی میکنه بخاطر همین رنگ هم به خط دادیم ولی چون خطی نداره رنگی نگرفته
 
-مورد بعدی Text decoration Srtyle  است  که برای اون هم 4 تا مقدار داریم که تلویند هم برای هر چهار تا یوتیلیتی هایی رو داره
+مورد بعدی Text decoration Style  است  که برای اون هم 4 تا مقدار داریم که تلویند هم برای هر چهار تا یوتیلیتی هایی رو داره
 
 
 
@@ -1586,3 +1586,38 @@ https://tailwindcss.com/docs/text-decoration
 <div align="center">
   <img  src="./img/text decoration style over viue.PNG">
 </div>
+
+هالا بجای این  underline داخل تصویر بالا که اون خطی که درست میشه زیر متن است میتونیم از مقادیر دیگه هم استفاده کنیم که بره بالا یا پایین یا وسط نوشته یا کلا حذف بشه مثلا overline , line-through 
+
+یه نکته این یوتیلیتی Text Decoration Style هم قابل تغیریا اضفه کردن یوتیلیتی دیگه رو تو فایل کانفیگ نداره چون همین چهار تا هستند
+ اخرین یوتیلیتی مربوط به  text decoration ها  Text Decoration Thicknecc است که مربوط به ضخامتن متن ها است تلویند بصورت پیشفرض  7 تا یوتیلیتی برای این موضوع داره 
+
+
+| class      | properties |
+| ----------- | ----------- |
+| decoration-auto      | text-decoration-thickness: auto;   |
+| decoration-from-font      | text-decoration-thickness: from-font;   |
+| decoration-0      | text-decoration-thickness: 0px;  |
+| decoration-1      | text-decoration-thickness: 1px;   |
+| decoration-2     | text-decoration-thickness: 2px;  |
+| decoration-4     | text-decoration-thickness: 4px;    |
+|decoration-8     | text-decoration-thickness: 8px; |
+
+<div align="center">
+  <img  src="./img/text decoration thickness over viue.PNG">
+</div>
+
+که البته این یوتیلیتی رو میتونین تو فایل کانفیگ شخصی سازی یا تغیر دهید و همچنین از روش Arbitrary  هم استفاده کینم.
+
+
+<div align="center">
+  <img  src="./img/text decoration thickness arbitrary.PNG">
+</div>
+
+
+و همچنین میتونیم خودمون هم برای ضخامت اون خط یعنی بحث thicknecc خودمون هم یوتیلیتی تعریف کنیم
+
+
+
+
+  <img  src="./img/text decoration create new thickness config tailwind.PNG">
