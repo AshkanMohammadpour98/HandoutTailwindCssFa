@@ -41,11 +41,12 @@
   - قسمت بیستم [افزودن تصویر به عنوان Background](#افزودن-تصویر-به-عنوان-Background)
   - قسمت بیستو یکم [یوتیلیتی های مربوط به Background Size](#یوتیلیتی-های-مربوط-به-Background-Size)
   - قسمت بیستو دوم [یوتیلیتی های مربوط به Backround Repeat](#یوتیلیتی-های-مربوط-به-Backround-Repeat)
+  - قسمت بیستو سوم [یوتیلیتی های مربوط به Background Position](#یوتیلیتی-های-مربوط-به-Background-Position)
     
   
 
     
-  - قسمت بیستو سوم بزودی ... :blush: :date:
+  - قسمت بیستو چهارم بزودی ... :blush: :date:
 
 ---
 
@@ -2066,3 +2067,95 @@ bg-repeat-round:
 
 bg-repeat-space:
 مثل یوتیلیتی bg-repeat-round هست تلاشه خودشو میکنه که به جوری بچینه که همه کامل باشن و کاتی صورت نگیره با این تفاوت که بجای فشرده کردن و یکم کش اومدن همه تصاویر که بتونه جاهای خالی رو کامل پر کنه بجاش بین عکسا یه فاصله اسپیس میزاره که بتونه اون کمبود فضا رو جبران کنه.
+
+---
+
+> # یوتیلیتی های مربوط به Background Position
+
+
+قاعدتن از اونجایی که تو css ما میتونیم از طریق پراپرتی background position میتونیم	موقیت و محل قرار گیری background  خودمون رو مشخص کنیم نیاز هست توی تلویند هم یوتیلیتی مربوطش رو مشناسیم و توی تلویند هم بتونیم همین عمل رو انجام بدیم.
+وارد داکیومیشن خود تلویند میشیم به مسیرDoc  و Backgrounds و Background Position 
+https://tailwindcss.com/docs/background-position
+
+
+| class      | properties |
+| ----------- | ----------- |
+| bg-bottom      | background-position: bottom;       |
+| bg-center   | background-position: center;        |
+| bg-left   | background-position: left;        |
+| bg-left-bottom   | background-position: left bottom;        |
+| bg-left-top   | background-position: left top;        |
+| bg-right   | background-position: right;      |
+| bg-right-bottom  | background-position: right bottom;      |
+| bg-top   | background-position: top;     |
+
+
+میبینیم که تلویند خودش یه سری یوتیلیتی های مرسوم background position رو برامون قرار داده  که علاوه بر اون استفاده از مقادیر Arbitrary و همچنین کانفیگ کردن داخل فایل تلویندی مون رو داره چون از اونجایی که مامیتونیم برای مقدار دادن به background position مون مثلا 200px  یا 100pxیه همچنین مقادیری هم بدیم میتونیم توفایل کانفیگ تلونید ویا بصورت Arbitrary  بهش مقادار دهی کنیم .
+بصورت پیشفرض background position ها دیفالت top-left هستند.
+
+
+
+
+
+<div align="center">
+  <img  src="./img/background position All.PNG">
+</div>
+
+
+
+<div align="center">
+  <img  src="./img/background position utilitys All.PNG">
+</div>
+<div align="center">
+  <img  src="./img/background position output Arbitrary.PNG">
+</div>
+<div align="center">
+  <img  src="./img/background position Arbitrary Code.PNG">
+</div>
+
+همون طور که میدونین _ گزاشتیم که تو روش Arbitrary با اسپیس مشکل داره تو تفصیر کردنش 
+و به همین شکل برای همه جهت ها میتونیم مقادیر Arbitrary رو برای background postion هامون در نظر بگیریم جز یوتیلیتی های دیفالت
+
+هالا اگه خاستیم میتونیم توی فایل کانفیگ تلویندمون هم براش یوتیلیتی هایی درست کنیم  به این صورت که وارد فایل کانفیگ مون میشیم و داخل ابجکت extend اسم backgroundPosition رو بصورت ابجکت مینویسم و یه اسم برای یوتیلیتی که میخواییم بسازیم در نظر میگیریم مثلا اسم semeCenter مثلا میخوایم یه یوتیلیتی درست کنیم که بکگراند پوزیشنش که بدیم بیاد وسط و به عنوان مقدارش 
+semeCenter: "bottom 55% right 55%"
+همونطور که میدونین چون تو فایل کانفیگ تلونید با فاصله یا اسپیس مشکلی نداره بینشون فاصله گزاشتیم ولی برای مقداردهی بصور arbitrary باید بجای فاصله ها از _ استفاده کنیم
+
+
+
+
+<div align="center">
+  <img  src="./img/background postion Config file custom code.PNG">
+</div>
+<div align="center">
+  <img  src="./img/background postion code and output custom.PNG">
+</div>
+
+اگه دوتا بکگراند رو هم برای عنصرتون دارین  و میخواید برای هرکدوم جدا background position  تعریف کنین  میتونین یه ,  کاما بزارین و بعدی رو تعریف کنین  توی فایل کانفیگ تلویند
+
+<div align="center">
+  <img  src="./img/background position use tow  background position.PNG">
+</div>
+
+برای تعریف background postion  برای دوتا عکس بکگراند با روش Arbitrary بخوایم جدا برای هرکدوم تعریف کنیم به چه صورت است؟
+
+
+<div align="center">
+  <img  src="./img/background position use tow backgroun position Arbitrary.PNG">
+</div>
+
+یادمون نره که حتما اسم position رو تو همون سینتکس Arbitrary بنویسیم که تلویند بفعمه و کار کنه جالبه که حتی خود داکیومشن تلویند به این موضوع اشاره نکرده
+
+```html
+  <body>
+    <div
+      class="
+      h-screen 
+      bg-[url('/public/dist/images/image-    2.jpg'),url(/public/dist/images/image-1.jpg)] 
+      bg-no-repeat 
+      bg-[length:200px_auto,200px_auto]
+      bg-[position:bottom_55%_right_55%,top_10%_left_30px]
+      "
+    ></div>
+  </body>                                                    
+```
+
