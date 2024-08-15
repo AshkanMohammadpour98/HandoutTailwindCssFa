@@ -44,13 +44,14 @@
   - قسمت بیستو سوم [یوتیلیتی های مربوط به Background Position](#یوتیلیتی-های-مربوط-به-Background-Position)
   - قسمت بیستو چهارم [ایجاد گرادینت ها در تلویند](#ایجاد-گرادینت-ها-در-تلویند)
   - قسمت بیستو پنجم [یوتیلیتی جذاب Background Clip برای زمینه عناصر](#یوتیلیتی-جذاب-Background-Clip-برای-زمینه-عناصر)
-  - قسمت بیستو ششم [Padding در تلویند](#اPadding-در-تلویند)
+  - قسمت بیستو ششم [Padding در تلویند](#Padding-در-تلویند)
+  - قسمت بیستو هفتم [Margin  در تلویند](#Margin-در-تلویند)
     
     
   
 
     
-  - قسمت بیستو هفتم بزودی ... :blush: :date:
+  - قسمت بیستو هشتم بزودی ... :blush: :date:
 
 ---
 
@@ -2553,3 +2554,78 @@ Padding ها از مقادیر Arbitrary پشتیبانی میکنند
 </div>
 
 که هم میتونیم اگه مقادیری که تلویند داره رو بنویسیم هم ارورایت کنیم یا جدید بنویسم
+
+
+---
+
+> # Margin  در تلویند
+
+قطعا با margin  ها و نحوه کارکردشون توی css  اشنا هستین  ونیازی به توضیح اضافه ای نیست  ولی قراره با یوتیلیتی های مربوط به margin ها تو تلویند اشنا بشیم .
+
+از اونجای که تو قسمت قبلی یوتیلیتی های padding  رو برسی کردیم این جلسه کارمون راحت تره  به این علت که margin ها مثل padding  ها  هستند و تفاوتی ندارند و به همون شکل میتونیم ازmargin ها هم استفاده کنیم  همونطور که تو جلسه padding ها اشاره کردیم همه مقادیری که  داخل فایل کنفیگ تلویند  زیر مجموعه قسمت Spacing تعریف میکنیم هم برای padding ها و هم برای margin ها مشترک هستند  بنابر این ما پیشاپیش اضافه کردن مقادیر جدید تو فایل کانفیگ تلویند رو بلدیم چون برای padding ها اون کارو انجام دادیم .
+
+
+
+خب وارد داکیومیشن خود تلونید مشیم Doc و قسمت Spacing و Margin 
+https://tailwindcss.com/docs/margin
+
+<div align="center">
+  <img  src="./img/margin all utilitis.PNG">
+</div>
+
+
+همون طور که میبینیم همجنین برای margin ها هم تلویند یوتیلیتی های زیادی گزاشته  و مثل paddin ها هستند  همون مقادیر و همون فورم  صرفن بجای p از m استفاده میکنیم 
+
+`یک نکته مهمی که هست توی margin ها اونم اینه مارجین ها میتونند مقدار منفی هم بگیرند `
+
+
+استفاده از مقدار منفی margin :
+
+
+<div align="center">
+  <img  src="./img/margin negative  -mt-8.PNG">
+</div>
+
+اضافه کردن margin به همه اطراف عنصر:
+
+<div align="center">
+  <img  src="./img/margin all around m-8.PNG">
+</div>
+
+اضافه کردن margin  به یک جهت :
+
+<div align="center">
+  <img  src="./img/margin one direction.PNG">
+</div>
+
+اضافه کردن margin  بصورت horizontal محورX ها :
+
+<div align="center">
+  <img  src="./img/margin horizontal mx-8.PNG">
+</div>
+
+اضافه کردن Margin بصورت vertical  محور Y ها :
+
+
+<div align="center">
+  <img  src="./img/margin vertical mx-8.PNG">
+</div>
+
+اسفتاده از margin بصورت استفاده از جهت سند dir :
+
+<div align="center">
+  <img  src="./img/margin dir document rtl or ltr.PNG">
+</div>
+
+اضافه کردن مقدار جدید یا شخصی سازی کردن مفادیر که در margin  ها و padding ها مشترک هست همین مقادیر و سایز هایی که مشخص میکنیم تو زیر مجموعه  spacing برای هر دو قابل استفاده است :
+
+<div align="center">
+  <img  src="./img/margin add new in config file.PNG">
+</div>
+
+
+استفاده از مقادیر Arbitrary در margin  :
+
+<div align="center">
+  <img  src="./img/margin use config file.PNG">
+</div
