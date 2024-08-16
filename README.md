@@ -46,12 +46,14 @@
   - قسمت بیستو پنجم [یوتیلیتی جذاب Background Clip برای زمینه عناصر](#یوتیلیتی-جذاب-Background-Clip-برای-زمینه-عناصر)
   - قسمت بیستو ششم [Padding در تلویند](#Padding-در-تلویند)
   - قسمت بیستو هفتم [Margin  در تلویند](#Margin-در-تلویند)
+  - قسمت بیستو نهم [یوتیلیتی کاربردی Space Between](#یوتیلیتی-کاربردی-Space-Between)
+    
     
     
   
 
     
-  - قسمت بیستو هشتم بزودی ... :blush: :date:
+  - قسمت بیستو نهم بزودی ... :blush: :date:
 
 ---
 
@@ -2629,3 +2631,93 @@ https://tailwindcss.com/docs/margin
 <div align="center">
   <img  src="./img/margin use config file.PNG">
 </div
+
+---
+
+> # یوتیلیتی کاربردی Space Between
+
+میخوایم با یوتیلتی space between تو تلویند اشنا بشیم  خب این یوتیلیتی برخلاف اکثر یوتیلیتی های تلویند نمیاد عملکرد یکی از پراپرتی های css یکی از عناصر رو دراختیارمون قرار بده  بلکه این یوتیلیتی  در واقع از همون margin ها استفاده میکنه  ولی با استفاده از اون margin ها یه عملکرد خیلی با حالی رو بهمون میده 
+
+وارد داکیومیشن خود تلویند میشیم Doc  و بخش Spacing ها و Space Between 
+https://tailwindcss.com/docs/space
+
+
+<div align="center">
+  <img  src="./img/utilites space between.PNG">
+</div
+
+همونطور که میبینید مقادیر مختلف space between  رو که زیادم هستن میتونیم اسفتاده کنیم  هلا داستان این یوتیلیی چیه؟ فرض کنین که شما یه div والد دارین  که داخلش مثلا سه تا div فرزند داریم هلا میخواد فرزندان والد بصورت عمودی یا افقی کنار هم دیگه قرار بگیرند فرقی نداره با استفاده از یوتیلیتی های مربوط به space between  میتونیم این یوتیلیتی هارو به والد بدیم و مشخص کنیم که div  های فرزندش چه مقدار از هم فاصله margin بگیرند یعنی بجای دستی وارد کردن برای همه div  های فرزند برای هرکدوم تکی و بصروت دستی margin وارد کنیم بجاش میتونیم از این یوتیللیتی های space between   رو به div  والد بدیم و روی عناصر داخش div  های فرزندش اعمال میشه .
+
+
+بعضی وقتا یه div  والد دارین و یه سری div فرزند داره و بصورت داینامیک هستند div های فرزندش و معلوم نیست جند تا میشن یا کاربر ممکنه اونا رو بسازه و معلوم نیست چند تا هستند و جند تا میشن و میخوایم کلا هرچند تا بودن یا شدن بینشون یه فاصله margin باشه  که اون موقع این یوتیلیتی های  space between  خیلی به دردمون میخورن.
+
+
+space-y-5
+
+<div align="center">
+  <img  src="./img/space between space-y-5.PNG">
+</div
+
+همونطور که میبینید ما فقط به والد space-y-5 دادیم برای فرزندانشم بکگراند دادیم و یه یوتیلیتی size دادیم که بعدن بهاش اشنا میشیم که این باعث یه سایز دادن برای wigth و height میشه  
+
+
+wigth و height میشه 
+
+<div align="center">
+  <img  src="./img/space between output  space-y-5.PNG">
+</div
+
+
+به همین شکل چون عناصر div ها black هستند میاد زیر هم و وقتی یوتیلیتی 
+Spac-y-5 رو دادیم در محور y یصورت اتومات عناصر از هم فاصله میگیرند.
+
+Space-x-5
+
+<div align="center">
+  <img  src="./img/space between space-x-5.PNG">
+</div
+
+هلا اگه div ها بصورت کنار تو محور X باشن چی ما از یوتیلیتی inline-black استاده کردیم اکه بعدن بهاش اشنا میشیم اومدیم کاری کردیم که عناصر فرزند بیان کنار هم یا اگه dis-play والد flex بود یا خود عناصر فرزند عناصر  inline-black ها بودن مثل span و... و تو محور X  بودن میتونیم از یوتیلیتی space-x-5 استفاده کنیم بدیمش به والد 
+
+<div align="center">
+  <img  src="./img/space between output space-x-5.PNG">
+</div
+
+یه نکته ای درمورد این محور x هست که بگیم اونم اینه که اگه شما dir صفحه تون rtl باشه یعنی راست به چپ  باشه  و عناصر از سمت راست به چپ نمایش داده بشن و از space-x-5 استفاده کنین تلویند یکم بدون نظم این فاصله هارو انجام میده 
+
+<div align="center">
+  <img  src="./img/space between and direction.PNG">
+</div
+
+هالا چاره این کار استفاده از یوتیلیتی `space-x-4 space-x-reverse` هست که برعکس میکنه فاصله اتومات رو که درست بشه 
+
+
+<div align="center">
+  <img  src="./img/space between space-x-5 and space-x-reverse.PNG">
+</div
+
+شخصی سازی مقادیر space between  :
+همونطور که قبلا هم گفتیم توفایل کانفیگ تلونید زیر مجموعه spacing هرمقدار و سایزی رو بنویسیم برای همه یوتیلتی های margin , padding , between  ها که شامل spacing میشن قابل دسترسی هستند مثلا یه "5px" : "5px"  نوشتیم 
+
+
+<div align="center">
+  <img  src="./img/space between config file.PNG">
+</div
+
+
+الان میتونیم این "5px" : "5px"  که نوشتیم هم میتونیم برای مقدار های padding , marging , space between  ها استفاده کنیم 
+به این صورت مثلا
+mt-5px 		margin top =>
+pb-5px		padding buttom => 
+space-y-5px	space between Y=>
+
+همجنین میتونیم از مقادیر Arbitrary هم برای space between  ها استفاده کنیم:
+
+
+```html
+<div class="space-y-[5px]">
+  <!-- ... -->
+</div>
+```
+
+---
